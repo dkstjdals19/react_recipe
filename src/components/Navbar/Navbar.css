@@ -1,0 +1,57 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between; /* 로고, 검색창, 메뉴를 좌우 정렬 */
+  align-items: center;
+  padding: 0 2rem;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 로고 스타일 */
+.top-nav h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* 검색 폼 */
+.top-nav form {
+  display: flex;
+}
+
+.top-nav input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.top-nav input[type="text"]:focus {
+  outline: none;
+  border-color: #ff7e5f;
+  box-shadow: 0 0 0 2px rgba(255, 126, 95, 0.2);
+}
+
+/* 메뉴 리스트 */
+.top-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.top-nav li a:hover {
+  color: #ff7e5f;
+}
