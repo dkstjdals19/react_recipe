@@ -4,3 +4,37 @@
  flex-wrap : wrap;
  justify-content: center;
 }
+
+.Home_no_search {
+  text-align: center;
+  width: 100%;
+  margin-top: 3em;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.Home_no_search h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.Home_no_search p {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+  color: #777;
+}
+
+.Home_no_search button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Home_no_search button:hover {
+  background-color: #45a049;
+}

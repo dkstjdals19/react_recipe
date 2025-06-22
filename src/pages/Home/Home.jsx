@@ -10,13 +10,13 @@ export default function Home(){
 
   // useEffect 로 컴포넌트가 실행될 때 함수 사용
   useEffect(()=>{
-    // hSearchFoodTest();
+    //hSearchFoodTest();
   }, [])
   
   return (
     <div className='Home_container'>
       {
-        foodList?.length > 0 &&(
+        foodList?.length > 0 ? (
           // foodList를 map으로 반복문 수행해서
           // DetailItem 컴포넌트가 반복문으로 생성되게
           // DetailItem 컴포넌트는 이미지, 제목, description
@@ -25,7 +25,19 @@ export default function Home(){
               <Detailitem item={item} key={item.id}/>
             )
           })
+        ) : (
+          <div className="Home_no_search">
+            <h3>검색을 해주세요</h3>
+            <p>banana, apple, mango...</p>
+            {/* 새 창을 띄우기 위해서 a 태그를 사용 */}
+            <a href='https://forkify-api.herokuapp.com/phrases.html' target='_blank'>
+            <button>검색 항목 안내</button>
+            </a>
+          </div>
+          
+
         )
+        
       }
     </div>
   )
